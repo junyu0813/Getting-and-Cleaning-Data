@@ -33,7 +33,7 @@ df <- df[, grepl("mean()", cname$V2, ignore.case=TRUE)|grepl("std()",
 trainy <- read.table("D:/R/Y_train.txt", header=F, sep="")
 testy <- read.table("D:/R/Y_test.txt", header=F, sep="")
 lname <- rbind(trainy, testy)
-
+ 
 ## Load activity label. 
 activity <- read.table("D:/R/activity_labels.txt", header=F, sep="")
 ## merge with lname to match the activity names with the presentative numbers
